@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .home {
+    padding: 1rem 4rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    left: -1200px;
+  }
+  #menu {
+    display: block;
+  }
+  header.toggle {
+    left: 0%;
+  }
+  body {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+  }
+  .heading {
+    margin: 0 3rem;
+  }
+  .about .row .counter .box {
+    width: 100%;
+  }
+  .education .box-container .box {
+    width: 100%;
+  }
+  .portfolio .box-container .box {
+    width: 100%;
+  }
+  .contact .row form {
+    margin: 3rem 0;
+  }
+}

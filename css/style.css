@@ -1,0 +1,470 @@
+/* 
+<i class="fas fa-user"></i>
+<i class="fas fa-users"></i>
+<i class="fas fa-phone"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-envelope"></i>
+<i class="fas fa-angle-right"></i>
+<i class="fas fa-angle-left"></i>
+<i class="fas fa-hand-point-right"></i>
+<i class="fas fa-hand-point-left"></i>
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-search"></i>
+<i class="far fa-calendar-alt"></i>
+==========Social Media========
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-pinterest-p"></i>
+<i class="fab fa-google-plus-g"></i>
+*/
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* font-family: 'Archivo', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/*Start Selector CSS Code*/
+:root {
+  --yello: #f9ca24;
+}
+*::selection {
+  background: var(--yello);
+  color: #333;
+}
+/*End Selector CSS Code*/
+/*Start Scroll bar CSS Code*/
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--yello);
+}
+/*End Scroll bar CSS Code*/
+/*Start Common CSS Code*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  padding-left: 35rem;
+  background: #111;
+}
+.container {
+  margin: 0 auto;
+  max-width: 114rem;
+  width: 96%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Start Reusable CSS Code*/
+
+section {
+  padding: 1rem;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 1.872rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.328rem;
+}
+h6 {
+  font-size: 1.072rem;
+}
+p {
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+ul li {
+  list-style: none;
+}
+.dg {
+  display: grid;
+  place-items: center;
+}
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+.btn i {
+  padding: 0rem 0.5rem;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  background: var(--yello);
+}
+.heading {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #fff4;
+  color: #fff;
+}
+.heading span {
+  color: var(--yello);
+}
+/* Start Header CSS Code*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+header .user img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid var(--yello);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+header .user .name {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+header .user .post {
+  font-size: 2rem;
+  color: #eee;
+  text-transform: uppercase;
+}
+header .navBar {
+  width: 100%;
+}
+header .navBar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+header .navBar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+header .navBar ul li a:hover {
+  background: var(--yello);
+}
+/* End Header CSS Code*/
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+/* Start Home CSS Code*/
+section.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+section.home h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+section.home h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+section.home h1 span {
+  font-size: 5rem;
+  color: var(--yello);
+}
+section.home p {
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+/* End Home CSS Code*/
+/* Start About CSS Code*/
+section.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+section.about .row .info {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+section.about .row .info h3 {
+  font-size: 2rem;
+  color: var(--yello);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+section.about .row .info h3 span {
+  color: #eee;
+  padding: 0 0.5rem;
+}
+section.about .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.about .row .counter .box {
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+section.about .row .counter span {
+  font-size: 4rem;
+  color: var(--yello);
+}
+section.about .row .counter h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+/* End About CSS Code*/
+/* Start Education CSS Code*/
+section.education .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+section.education .box-container .box {
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+section.education .box-container .box span {
+  font-size: 1.3rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 2.5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+section.education .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+section.education .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+section.education .box-container .box i {
+  position: absolute;
+  top: -1.5em;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--yello);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End Education CSS Code*/
+/* Start Work CSS Code*/
+section.portfolio .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+section.portfolio .box-container .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+section.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.portfolio .box-container .box:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* End Work CSS Code*/
+/* Start Contact CSS Code*/
+section.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.contact .row .content {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+section.contact .row form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+section.contact .row form .box {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: #3333;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+section.contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+section.contact .row form .message {
+  height: 15rem;
+  resize: none;
+}
+section.contact .row .content .title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+section.contact .row .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+section.contact .row .content .info h3 i {
+  padding-right: 1rem;
+  color: var(--yello);
+}
+/* End Contact CSS Code*/
+
+/* Scroll Top Buttom */
+.top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 3rem;
+  z-index: 1000;
+  display: none;
+  width: 45px;
+}
